@@ -8,7 +8,7 @@ LABEL maintainer="krunoslavp@maintainityourself.com"
 EXPOSE 8080
 
 # The application's jar file
-ARG JAR_FILE=build/libs/restmockserver-0.0.1.jar
+ARG JAR_FILE=build/libs/restmockserver-1.0.0.jar
 
 # Add the application's jar to the container
 ADD ${JAR_FILE} app.jar
