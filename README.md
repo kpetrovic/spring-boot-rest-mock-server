@@ -36,7 +36,7 @@ jdbc:h2:file:./src/main/resources/static/dune-data/dunedb
 Please note that any updates or alterations to the data at runtime will result in changes to this [file](./src/main/resources/static/dune-data/dunedb.mv.db). Keep this in mind when creating a new JAR file or Docker image.
 
 ## Swagger
-The Swagger UI can be accessed at swagger-ui. This provides a visual interface for interacting with the API. The main endpoints available for CRUD operations are:
+The Swagger UI can be accessed at [swagger-ui](http://localhost:8080/swagger). This provides a visual interface for interacting with the API. The main endpoints available for CRUD operations are:
 
 - /authors
 - /publications
