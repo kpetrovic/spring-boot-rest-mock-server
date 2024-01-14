@@ -51,7 +51,7 @@ Then, build the Docker image and run it:
 
 ```bash
 docker build -t rest-dune-mock-server .
-docker run -p 8080:8080 rest-dune-mock-server
+docker run -d -p 8080:8080 rest-dune-mock-server
 ```
 
 This will create a Docker image named "rest-dune-mock-server" and run it, mapping the container's port 8080 to your machine's port 8080.
