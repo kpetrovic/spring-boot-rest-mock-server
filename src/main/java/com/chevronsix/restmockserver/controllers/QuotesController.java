@@ -14,11 +14,18 @@ public class QuotesController {
         this.quoteRepository = quoteRepository;
     }
 
-    @GetMapping("/random-quote")
-    public String randomQuote() {
+    @GetMapping("/random-quote-browser")
+    public String randomQuoteBrowser() {
         int count = (int) quoteRepository.count();
         int randomId = ThreadLocalRandom.current().nextInt(1, count + 1);
         Quote quote = quoteRepository.findById(randomId).orElseThrow();
         return quote.getQuote();
+    }
+
+    @GetMapping("/random-quote")
+    public Quote randomQuote() {
+        int count = (int) quoteRepository.count();
+        int randomId = ThreadLocalRandom.current().nextInt(1, count + 1);
+        return quoteRepository.findById(randomId).orElseThrow();
     }
 }
