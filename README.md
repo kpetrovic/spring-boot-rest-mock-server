@@ -9,7 +9,7 @@ The server is pre-populated with data inspired by the Dune universe, making it a
 To build the project, use the following command in your terminal:
 
 ```bash
-$ ./gradlew clean build
+./gradlew clean build
 ```
 
 This command cleans any previous builds and creates a new build of the project.
@@ -18,7 +18,7 @@ This command cleans any previous builds and creates a new build of the project.
 To run the project, use the following command in your terminal:
 
 ```bash
-$ ./gradlew bootRun
+./gradlew bootRun
 ```
 
 This command starts the application.
@@ -44,14 +44,14 @@ These endpoints allow you to interact with data related to Frank Herbert's Dune 
 To containerize the application using Docker, first create a JAR file:
 
 ```bash
-$ ./gradlew clean build
+./gradlew clean build
 ```
 
 Then, build the Docker image and run it:
 
 ```bash
-$ docker build -t rest-dune-mock-server .
-$ docker run -p 8080:8080 rest-dune-mock-server
+docker build -t rest-dune-mock-server .
+docker run -p 8080:8080 rest-dune-mock-server
 ```
 
 This will create a Docker image named "rest-dune-mock-server" and run it, mapping the container's port 8080 to your machine's port 8080.
